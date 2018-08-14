@@ -23,11 +23,15 @@ Text Domain:  accelerate-theme-child
 }
 
 /* featured work on homepage */
+.site-content {
+  max-width: 980px;
+}
+
 .featured-work .site-content {
     margin: 6em auto;
 }
 .featured-work h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 2.25em;
@@ -41,7 +45,6 @@ Text Domain:  accelerate-theme-child
 }
 .individual-featured-work {
     margin-bottom: 2em;
-    margin-right: 2em;
 }
 .individual-featured-work a {
 	display: block;
@@ -50,8 +53,9 @@ Text Domain:  accelerate-theme-child
     font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
 
-
-/** Blog Post **/
+div.page-header{
+  text-align: center;
+}
 
 .blog-post {
   width: 50%;
@@ -118,22 +122,105 @@ Text Domain:  accelerate-theme-child
 
 /*Social Media Navigation*/
 
-.menu-social-media-nav-container ul li {
-  display: inline-block;
-  margin: 5px;
-  font-size: 1.2em;
-  height: 30px;
-  border-radius: 100%;
+.social-media-navigation ul {
+    list-style: none;
 }
 
-i._mi.elusive.el-icon-linkedin ::before, i._mi.elusive.el-icon-facebook ::before, i._mi.elusive.el-icon-twitter ::before {
+.social-media-menu li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0px 3px;
+    padding: 3px 0;
+    text-align: center;
+    -webkit-border-radius: 80%;
+    -moz-border-radius: 80%;
+    border-radius: 80%;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 1em;
+}
 
+.social-media-menu li a {
+    color: white;
+}
+
+.social-media-menu  .menu-item i._mi {
+    margin-top: 0;
+}
+
+.menu-item i._mi {
+  font-size: 0.9em;
 }
 
 /* END Social Media Navigation*/
 
+/* Contact Form */
+
+  .contact-us-name {
+    width: 100%;
+    display: block;
+  }
+
+  .contact-us-email {
+    width: 100%;
+    display: block;
+  }
+
+  #nf-form-1-cont {
+    max-width: 660px;
+  }
+
+  input[type="button"], input[type="submit"] {
+    float: right;
+    background: #45ac9d;
+  }
+
+  .label-above .field-wrap, .label-below .field-wrap {
+    margin-top: 1.5em;
+  }
+
+ .nf-field-label label {
+  font-size: 0.8em;
+}
+ /* End Contact Form */
+
+
+ /* About Page */
+h4#our-services {
+  font-size: 1em;
+  margin-bottom: 0.3em;
+}
+
+.about-page-header {
+  text-align: center;
+}
+
+ul.about {
+  list-style: none;
+}
+
+.contact-us-button {
+  text-align: center;
+  border-top: 1px solid #BFBFBF;
+  overflow: auto;
+}
+
+.contact-us-button h1{
+  float: left;
+}
+
+.about-button{
+}
+
+
+ /* End About Page */
+
 /* Media Queries */
 @media (min-width: 768px) {
+
+  div.page-header{
+    display: inline;
+  }
 
   .featured-work .site-content {
     margin: auto auto 3em;
@@ -151,13 +238,31 @@ i._mi.elusive.el-icon-linkedin ::before, i._mi.elusive.el-icon-facebook ::before
   }
 
     aside.case-study-sidebar {
-        float: left;
-        width: 34%;
-        margin: 0 6% 0 0;
+      float: left;
+      width: 34%;
+      margin: 0 6% 0 0;
     }
 
     div.case-study-images {
-        float: left;
-        width: 60%;
+      float: left;
+      width: 60%;
     }
+
+    .contact-us-name {
+      width: 49%;
+      display: inline-block;
+      padding-right: 22px;
+    }
+
+    .contact-us-email {
+      width: 49%;
+      display: inline-block;
+    }
+
+    .main-content {
+      margin-left: 6em;
+    }
+
 }
+
+/* End Media Queries */

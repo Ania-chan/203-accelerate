@@ -1,0 +1,20 @@
+ <section class="featured-work">
+   <div class="site-content clearfix">
+     <h4 id="our-services">Our Services</h4>
+  	 <p class="about-page-header">We take pride in our clients and the content we create for them. <br>Here's a brief overview of our offeered services.</p>
+     <ul class="about" clearfix>
+         <?php query_posts('category_name=about&order=ASC'); ?>
+         <?php while ( have_posts() ) : the_post(); ?>
+           <li class="about-item clearfix">
+             <div class="about-title">
+               <h2><?php the_title(); ?></h2>
+            </div>
+            <div class="about-content">
+              <?php the_content(); ?>
+            </div>
+          </li>
+         <?php endwhile; ?>
+       <?php wp_reset_query(); ?>
+       </ul>
+     </div>
+ </section>
