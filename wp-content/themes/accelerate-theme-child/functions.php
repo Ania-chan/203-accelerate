@@ -17,7 +17,7 @@ function accelerate_child_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
-//Creates custom posts for Case studies
+//Creates custom posts
 function create_custom_post_types() {
     register_post_type( 'case_studies',
         array(
@@ -30,21 +30,15 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
-}
-add_action( 'init', 'create_custom_post_types' );
 
-//Creates custom posts for About page
-function create_custom_about_page() {
-    register_post_type( 'about_page',
+		register_post_type( 'about_page',
         array(
             'labels' => array(
                 'name' => __( 'About Page' ),
                 'singular_name' => __( 'Our Service' )
             ),
             'public' => true,
-            'has_archive' => true,
-            'rewrite' => array( 'slug' => 'about' ),
         )
     );
 }
-add_action( 'init', 'create_custom_about_page' );
+add_action( 'init', 'create_custom_post_types' );

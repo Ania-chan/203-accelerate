@@ -186,6 +186,11 @@ div.page-header{
 
 
  /* About Page */
+.about-page-header h3 {
+ margin: 0 auto;
+ width: 35%;
+}
+
 h4#our-services {
   font-size: 1em;
   margin-bottom: 0.3em;
@@ -193,23 +198,50 @@ h4#our-services {
 
 .about-page-header {
   text-align: center;
+  margin-bottom: 5em;
 }
 
 ul.about {
   list-style: none;
 }
 
-.contact-us-button {
-  text-align: center;
-  border-top: 1px solid #BFBFBF;
-  overflow: auto;
+.service-item {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.contact-us-button h1{
+
+.service-description {
+  width: 100%;
+}
+
+.about-images {
+  width: 100%;
+}
+
+.contact-us {
+  border-top: 1px solid #BFBFBF;
+  overflow: auto;
+  vertical-align: middle;
+  clear: both;
+}
+
+.contact-us-text{
   float: left;
+  display: inline;
+}
+
+.contact-us-text h1{
+  display: inline;
+}
+
+.contact-us-button {
+  float: right;
+  display: inline;
 }
 
 .about-button{
+  display: block;
 }
 
 
@@ -262,6 +294,27 @@ ul.about {
     .main-content {
       margin-left: 6em;
     }
+
+    .service-description {
+      width: 66%;
+      float: right;
+      margin: 0;
+    }
+
+    .about-images {
+      width: 30%;
+      float: left;
+      margin: 2em 0;
+    }
+
+    .service-item:nth-of-type(even) div{
+      float: left;
+    }
+
+    .service-item:nth-of-type(even) img{
+      float: right;
+    }
+
 
 }
 
