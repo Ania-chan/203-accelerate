@@ -186,7 +186,8 @@ div.page-header{
 
 
  /* About Page */
-.about-page-header h3 {
+
+ .about-page-header h3 {
  margin: 0 auto;
  width: 35%;
 }
@@ -210,7 +211,6 @@ ul.about {
   vertical-align: middle;
 }
 
-
 .service-description {
   width: 100%;
 }
@@ -221,23 +221,24 @@ ul.about {
 
 .contact-us {
   border-top: 1px solid #BFBFBF;
-  overflow: auto;
   vertical-align: middle;
   clear: both;
+  padding: 40px 0;
 }
 
 .contact-us-text{
-  float: left;
   display: inline;
 }
 
 .contact-us-text h1{
   display: inline;
+  flaoat: left;
 }
 
 .contact-us-button {
   float: right;
   display: inline;
+  margin-top: 30px;
 }
 
 .about-button{

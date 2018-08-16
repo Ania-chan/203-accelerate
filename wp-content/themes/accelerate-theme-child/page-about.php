@@ -57,7 +57,7 @@ get_header(); ?>
 
   	<div class="site-content clearfix">
       <div class="contact-us">
-        <div c;ass="contact-us-text">
+        <div class="contact-us-text">
         <h1>Interested in working with us?</h1>
       </div>
       <div class="contact-us-button">
