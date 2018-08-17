@@ -57,20 +57,23 @@ div.page-header{
   text-align: center;
 }
 
-.blog-post {
-  width: 50%;
-  float: left;
+.blog-post, .tweet {
+  width: 100%;
   margin-bottom: 2em;
 }
 
-.blog-post h4 {
+.tweet {
+  padding-left: 0;
+}
+
+.blog-post h4, .tweet h4 {
   font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
   color: #a6a6a6;
   text-transform: uppercase;
   margin: 2em 0 .5em;
 }
 
-.blog-post h3 {
+.blog-post h3, h3.widget-title {
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -80,6 +83,22 @@ div.page-header{
   text-transform: uppercase;
   font-weight: 700;
   font-family: 'Montserrat';
+}
+
+ul.tweets li {
+  list-style: none;
+}
+
+div.twitter-follow-container {
+  color: #45ac9d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 /** Case Study **/
@@ -278,6 +297,16 @@ ul.about {
 
 /* Media Queries */
 @media (min-width: 768px) {
+
+  .blog-post, .tweet {
+    width: 50%;
+    float: left;
+    margin-bottom: 2em;
+  }
+
+  .tweet {
+    padding-left: 4em;
+  }
 
   div.page-header{
     display: inline;
