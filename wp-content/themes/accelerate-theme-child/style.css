@@ -221,32 +221,60 @@ ul.about {
 
 .contact-us {
   border-top: 1px solid #BFBFBF;
-  vertical-align: middle;
-  clear: both;
-  padding: 40px 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-us-text{
-  display: inline;
+  display: flex;
 }
 
 .contact-us-text h1{
-  display: inline;
-  flaoat: left;
+  align-items: center;
 }
 
 .contact-us-button {
-  float: right;
-  display: inline;
-  margin-top: 30px;
-}
-
-.about-button{
-  display: block;
+  display: flex;
+  align-items: center;
+  padding-top: 1.5em;
 }
 
 
  /* End About Page */
+
+ /** 404 Page **/
+ .error-page {
+   overflow: auto;
+ }
+
+ .map-image {
+   display: inline-block;
+ }
+
+  #error-heading {
+    float: right;
+    display: inline-block;
+    font: 700 2em/1.75 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #45ac9d;
+    width: 100%;
+  }
+
+  #error-paragraph-1,   #error-paragraph-2 {
+    width: 100%;
+    float: right;
+    display: inline-block;
+    font: 500 1.1em/1.75 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+    margin: 1em auto;
+    padding-right: 2em;
+  }
+
+  #error-paragraph-2 span {
+    color: #45ac9d;
+  }
+
+ /** End 404 Page **/
 
 /* Media Queries */
 @media (min-width: 768px) {
@@ -316,6 +344,13 @@ ul.about {
       float: right;
     }
 
+    .contact-us {
+      display: flex;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: space-evenly;
+      flex-flow: row;
+    }
 
 }
 
