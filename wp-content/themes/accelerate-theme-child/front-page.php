@@ -47,6 +47,24 @@ get_header(); ?>
 	  	</div>
 	</section>
 
+	<div class="site-content homepage-about-items clearfix">
+		<ul class="about-homepage" clearfix>
+				<?php query_posts('post_type=about_page&order=ASC'); ?>
+				 <?php while ( have_posts() ) : the_post();
+						 $service_image = get_field('service_image');
+						 $size = "medium"; ?>
+
+						<li class="service-homepage">
+							 <?php if($service_image) {
+								echo wp_get_attachment_image( $service_image, $size);
+								} ?>
+								<p class="homepage-services-name"><?php the_title(); ?></p>
+					 </li>
+				<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
+			</ul>
+		</div>
+
 
 	<section class="recent-posts">
 	 <div class="site-content">

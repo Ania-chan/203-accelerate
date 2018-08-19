@@ -19,41 +19,52 @@ Text Domain:  accelerate-theme-child
 }
 
 .button {
-    background: #45ac9d;
+  background: #45ac9d;
 }
 
 /* featured work on homepage */
+
 .site-content {
   max-width: 980px;
 }
 
 .featured-work .site-content {
-    margin: 6em auto;
-}
-.featured-work h4 {
-  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-	text-align: center;
-	text-transform: uppercase;
-	margin-bottom: 2.25em;
-}
-.homepage-featured-work {
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	text-align: center;
-	width: 100%;
-}
-.individual-featured-work {
-    margin-bottom: 2em;
-}
-.individual-featured-work a {
-	display: block;
-}
-.individual-featured-work h3 {
-    font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+  margin: 6em auto;
 }
 
-div.page-header{
+.featured-work h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.25em;
+}
+
+.homepage-featured-work {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.individual-featured-work {
+  margin-bottom: 2em;
+}
+
+.individual-featured-work a {
+  display: block;
+}
+
+.individual-featured-work h3 {
+  font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+}
+
+img.attachment-medium.size-medium {
+  height: 223px;
+  width: 300px;
+}
+
+div.page-header {
   text-align: center;
 }
 
@@ -85,6 +96,32 @@ div.page-header{
   font-family: 'Montserrat';
 }
 
+.homepage-about-items {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.about-homepage {
+  list-style: none;
+  display: flex;
+}
+
+ul.about-homepage li {
+  display: flex;
+  flex-flow: column;
+}
+
+p.homepage-services-name {
+  text-align: center;
+}
+
+ul.tweets {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 ul.tweets li {
   list-style: none;
 }
@@ -101,6 +138,7 @@ div.twitter-follow-container {
   vertical-align: baseline;
 }
 
+
 /** Case Study **/
 
 .case-study {
@@ -108,7 +146,7 @@ div.twitter-follow-container {
 }
 
 .case-study h2 {
-    font: 700 1.5em/1.5;
+  font: 700 1.5em/1.5;
 }
 
 .case-study-sidebar h4 {
@@ -142,29 +180,29 @@ div.twitter-follow-container {
 /*Social Media Navigation*/
 
 .social-media-navigation ul {
-    list-style: none;
+  list-style: none;
 }
 
 .social-media-menu li {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 0px 3px;
-    padding: 3px 0;
-    text-align: center;
-    -webkit-border-radius: 80%;
-    -moz-border-radius: 80%;
-    border-radius: 80%;
-    background: rgba(0, 0, 0, 0.8);
-    font-size: 1em;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0px 3px;
+  padding: 3px 0;
+  text-align: center;
+  -webkit-border-radius: 80%;
+  -moz-border-radius: 80%;
+  border-radius: 80%;
+  background: rgba(0, 0, 0, 0.8);
+  font-size: 1em;
 }
 
 .social-media-menu li a {
-    color: white;
+  color: white;
 }
 
-.social-media-menu  .menu-item i._mi {
-    margin-top: 0;
+.social-media-menu .menu-item i._mi {
+  margin-top: 0;
 }
 
 .menu-item i._mi {
@@ -175,40 +213,40 @@ div.twitter-follow-container {
 
 /* Contact Form */
 
-  .contact-us-name {
-    width: 100%;
-    display: block;
-  }
+.contact-us-name {
+  width: 100%;
+  display: block;
+}
 
-  .contact-us-email {
-    width: 100%;
-    display: block;
-  }
+.contact-us-email {
+  width: 100%;
+  display: block;
+}
 
-  #nf-form-1-cont {
-    max-width: 660px;
-  }
+#nf-form-1-cont {
+  max-width: 660px;
+}
 
-  input[type="button"], input[type="submit"] {
-    float: right;
-    background: #45ac9d;
-  }
+input[type="button"], input[type="submit"] {
+  float: right;
+  background: #45ac9d;
+}
 
-  .label-above .field-wrap, .label-below .field-wrap {
-    margin-top: 1.5em;
-  }
+.label-above .field-wrap, .label-below .field-wrap {
+  margin-top: 1.5em;
+}
 
- .nf-field-label label {
+.nf-field-label label {
   font-size: 0.8em;
 }
- /* End Contact Form */
 
+/* End Contact Form */
 
- /* About Page */
+/* About Page */
 
- .about-page-header h3 {
- margin: 0 auto;
- width: 35%;
+.about-page-header h3 {
+  margin: 0 auto;
+  width: 35%;
 }
 
 h4#our-services {
@@ -246,11 +284,11 @@ ul.about {
   justify-content: center;
 }
 
-.contact-us-text{
+.contact-us-text {
   display: flex;
 }
 
-.contact-us-text h1{
+.contact-us-text h1 {
   align-items: center;
 }
 
@@ -260,127 +298,128 @@ ul.about {
   padding-top: 1.5em;
 }
 
+/* End About Page */
 
- /* End About Page */
+/** 404 Page **/
 
- /** 404 Page **/
- .error-page {
-   overflow: auto;
- }
+.error-page {
+  overflow: auto;
+}
 
- .map-image {
-   display: inline-block;
- }
+.map-image {
+  display: inline-block;
+}
 
-  #error-heading {
-    float: right;
-    display: inline-block;
-    font: 700 2em/1.75 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #45ac9d;
-    width: 100%;
-  }
+#error-heading {
+  float: right;
+  display: inline-block;
+  font: 700 2em/1.75 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #45ac9d;
+  width: 100%;
+}
 
-  #error-paragraph-1,   #error-paragraph-2 {
-    width: 100%;
-    float: right;
-    display: inline-block;
-    font: 500 1.1em/1.75 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
-    margin: 1em auto;
-    padding-right: 2em;
-  }
+#error-paragraph-1, #error-paragraph-2 {
+  width: 100%;
+  float: right;
+  display: inline-block;
+  font: 500 1.1em/1.75 'Londrina Solid', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  margin: 1em auto;
+  padding-right: 2em;
+}
 
-  #error-paragraph-2 span {
-    color: #45ac9d;
-  }
+#error-paragraph-2 span {
+  color: #45ac9d;
+}
 
- /** End 404 Page **/
+/** End 404 Page **/
+
+/** Sidebar Newsletter **/
+
+#sidebar h2 {
+  margin-top: 1em;
+}
+
+input[type="button"], input[type="submit"] {
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+}
+#mc4wp_form_widget-2 {
+  margin-bottom: 2em;
+}
+
+/** End Sidebar Newsletter **/
 
 /* Media Queries */
-@media (min-width: 768px) {
 
+@media (min-width: 768px) {
   .blog-post, .tweet {
     width: 50%;
     float: left;
     margin-bottom: 2em;
   }
-
   .tweet {
     padding-left: 4em;
   }
-
-  div.page-header{
+  div.page-header {
     display: inline;
   }
-
   .featured-work .site-content {
     margin: auto auto 3em;
   }
-
   .individual-featured-work {
     float: left;
     width: 33%;
     padding: 0 .5em;
   }
-    .blog-post {
-  	width: 50%;
-  	float: left;
+  .blog-post {
+    width: 50%;
+    float: left;
     margin-bottom: 2em;
   }
-
-    aside.case-study-sidebar {
-      float: left;
-      width: 34%;
-      margin: 0 6% 0 0;
-    }
-
-    div.case-study-images {
-      float: left;
-      width: 60%;
-    }
-
-    .contact-us-name {
-      width: 49%;
-      display: inline-block;
-      padding-right: 22px;
-    }
-
-    .contact-us-email {
-      width: 49%;
-      display: inline-block;
-    }
-
-    .main-content {
-      margin-left: 6em;
-    }
-
-    .service-description {
-      width: 66%;
-      float: right;
-      margin: 0;
-    }
-
-    .about-images {
-      width: 30%;
-      float: left;
-      margin: 2em 0;
-    }
-
-    .service-item:nth-of-type(even) div{
-      float: left;
-    }
-
-    .service-item:nth-of-type(even) img{
-      float: right;
-    }
-
-    .contact-us {
-      display: flex;
-      flex-wrap: nowrap;
-      align-content: center;
-      justify-content: space-evenly;
-      flex-flow: row;
-    }
-
+  aside.case-study-sidebar {
+    float: left;
+    width: 34%;
+    margin: 0 6% 0 0;
+  }
+  div.case-study-images {
+    float: left;
+    width: 60%;
+  }
+  .contact-us-name {
+    width: 49%;
+    display: inline-block;
+    padding-right: 22px;
+  }
+  .contact-us-email {
+    width: 49%;
+    display: inline-block;
+  }
+  .main-content {
+    margin-left: 6em;
+  }
+  .service-description {
+    width: 66%;
+    float: right;
+    margin: 0;
+  }
+  .about-images {
+    width: 30%;
+    float: left;
+    margin: 2em 0;
+  }
+  .service-item:nth-of-type(even) div {
+    float: left;
+  }
+  .service-item:nth-of-type(even) img {
+    float: right;
+  }
+  .contact-us {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    flex-flow: row;
+  }
 }
 
 /* End Media Queries */
